@@ -1,0 +1,42 @@
+/* img {
+  display: inline-block;
+  width: 100%;
+}
+section {
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: space-between;
+}
+div {
+  display: flex;
+  width: 30%;
+  flex-direction: column;
+  align-items: center;
+} */
+
+.flex-container {
+  display: flex;
+  background-color: DodgerBlue;
+  height: 500px;
+  /* flex-wrap: nowrap; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+  /* shorthand --> precica flex-flow*/
+  /* flex-flow: column nowrap; */
+  /* align-items: center; */
+  /* justify-content: center; */
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* flex-wrap: wrap; */
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}

@@ -1,0 +1,96 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  padding-bottom: 10px;
+}
+ul {
+  list-style: none;
+}
+li {
+  border-bottom: 0.5px solid white;
+  background-color: orange;
+  text-align: center;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  padding: 10px;
+  width: 100%;
+}
+nav a:hover {
+  background-color: orangered;
+}
+
+h1 {
+  color: brown;
+  padding: 10px;
+  text-align: center;
+}
+
+h3 {
+  margin-bottom: 15px;
+}
+.div_sa_slikom {
+  margin: 20px 0;
+  padding: 10px 0;
+  background-color: burlywood;
+  text-align: center;
+}
+.div_sa_slikom img {
+  display: block;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer {
+  background-color: antiquewhite;
+  overflow: hidden;
+}
+.inkedin a img {
+  width: 40px;
+  float: right;
+}
+
+@media screen and (min-width: 700px) {
+  nav ul {
+    overflow: hidden;
+  }
+  nav li {
+    float: left;
+    width: 25%;
+    border-right: 1px solid white;
+  }
+  .sekcija {
+    overflow: hidden;
+  }
+  .div_sa_slikom {
+    float: left;
+    width: 33%;
+    height: 400px;
+    position: relative;
+  }
+
+  .div_sa_slikom p {
+    position: absolute;
+    bottom: 5%;
+  }
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+  }
+  footer p {
+    float: left;
+    width: 50%;
+  }
+  .inkedin img {
+    width: 50px;
+  }
+}

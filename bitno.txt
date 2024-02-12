@@ -1,0 +1,9 @@
+  const firebaseConfig = {
+    apiKey: "AIzaSyDQIN9LYMx0yVV1efVvQt-55MapXrLoo88",
+    authDomain: "itb-js-pvp56gh.firebaseapp.com",
+    projectId: "itb-js-pvp56gh",
+    storageBucket: "itb-js-pvp56gh.appspot.com",
+    messagingSenderId: "4222105703",
+    appId: "1:4222105703:web:4eb7112a58877d0cb07cc2",
+    measurementId: "G-0CHPJE4HQS"
+  };

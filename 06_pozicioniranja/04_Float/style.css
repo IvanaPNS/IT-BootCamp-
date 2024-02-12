@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* horinzontalni meni*/
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+.topbar ul {
+  overflow: hidden;
+  list-style: none;
+}
+.topbar ul li {
+  width: 25%;
+  float: left;
+  border: 1px solid black;
+  text-align: center;
+  background-color: tomato;
+}
+
+.topbar ul li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 10px 0;
+  font-size: 18px;
+}
+.topbar ul li a:hover {
+  background-color: brown;
+}
+/*padajuci meni*/
+
+.dropdown {
+  display: none;
+}
+
+.topbar li:nth-child(4):hover .dropdown {
+  display: block;
+}
+
+/*ostatak stranice*/
+.ostatak {
+  position: relative;
+  top: 40px;
+  overflow: hidden;
+}
+.ostatak aside {
+  float: left;
+  width: 30%;
+}
+
+.ostatak section {
+  float: left;
+  width: 70%;
+}
+/*vertikalni meni*/
+
+.ostatak aside ul {
+  list-style: none;
+}
+.ostatak aside ul li {
+  border: 1px solid black;
+  text-align: center;
+  background-color: gray;
+}
+.ostatak aside ul li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 10px 0;
+  font-size: 18px;
+}
+.ostatak aside ul li a:hover {
+  background-color: brown;
+}

@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: red;
+}
+.row {
+  width: 100%;
+  overflow: hidden;
+}
+[class*="col-"] {
+  float: left;
+}
+
+.dropdown,
+ul li {
+  background-color: aqua;
+  border-bottom: 1px solid white;
+}
+
+.dropdown,
+ul li a {
+  text-decoration: none;
+  /* display: block; */
+  padding: 10px;
+  color: black;
+  font-size: 90%;
+}
+.gradient {
+  background-image: linear-gradient(aqua, white);
+  font-size: 20px;
+  height: 100%;
+  padding: 10px;
+}
+.gradient p:nth-child(2) {
+  font-style: italic;
+}
+.add {
+  background-color: aqua;
+  text-align: center;
+  padding: 10px 0;
+}
+.nav a {
+  font-weight: bold;
+}
+.box {
+  padding-bottom: 5px;
+}
+.dropdown ul {
+  list-style: none;
+}
+.dropdown ul li a:hover,
+.nav ul li a:hover {
+  background-color: rgb(42, 50, 165);
+}
+.dropdown {
+  display: none;
+  position: absolute;
+  border: 1px solid white;
+}
+.gradient :hover .dropdown {
+  display: block;
+}
+/* mobilni */
+@media only screen and (max-width: 1024px) {
+  [class*="col-"] {
+    width: 100%;
+  }
+  .box1 {
+    background-image: url(pizza.jpg);
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+  }
+  .box2 {
+    background-image: url(jessica-lewis-FVbZZpP58dY-unsplash.jpg);
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+  }
+  .box3 {
+    background-image: url(olayinka-babalola-r01ZopTiEV8-unsplash.jpg);
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+  }
+  .dropdown {
+   max-width: 70%;
+  }
+  .dropdown a{
+    font-size: 70%;
+    padding: 5px;
+  
+  }
+
+}
+/* racunare */
+@media only screen and (min-width: 1024px) {
+  [class*="col-"] {
+    float: left;
+  
+  
+  }
+  .box1 {
+    background-image: url(jessica-lewis-FVbZZpP58dY-unsplash.jpg);
+    background-size: cover;
+    height: 350px;
+    background-position: center;
+  }
+  .box2 {
+    background-image: url(olayinka-babalola-r01ZopTiEV8-unsplash.jpg);
+    background-size: cover;
+    height: 350px;
+    background-position: center;
+  }
+  .box3 {
+    background-image: url(pizza.jpg);
+    background-size: cover;
+    height: 350px;
+    background-position: center;
+  }
+  .col-1 {
+    width: 8.33%;
+  }
+  .col-2 {
+    width: 16.66%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 33.33%;
+  }
+  .col-5 {
+    width: 41.66%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-7 {
+    width: 58.33%;
+  }
+  .col-8 {
+    width: 66.66%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-10 {
+    width: 83.33%;
+  }
+  .col-11 {
+    width: 91.66%;
+  }
+  .col-12 {
+    width: 100%;
+  }
+}

@@ -1,0 +1,11 @@
+td > img {
+    width: 200px;
+    height: 300px;
+}
+h3 {
+    text-align: center;
+}
+div > img {
+    width: 100px;
+height: auto;
+}
