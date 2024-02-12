@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ITBootcamp Chat</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Naslov četa -->
+      <div class="header">
+        <header >
+          <h1>ITBootcamp Chat</h1>
+          <h2>Choose a chatroom</h2>
+        </header>
+        <!-- Dugmad za sobe (chatrooms) -->
+        <nav>
+          <button id="btnGeneral" class="btn">#general</button>
+          <button id="btnJs" class="btn">#js</button>
+          <button id="btnHomeworks" class="btn">#homeworks</button>
+          <button id="btnTests" class="btn">#tests</button>
+        </nav>
+      </div>
+
+      <!-- Prostor za poruke -->
+      <section class="sekcija">
+        <ul class="lista" id="lista">
+          <!-- Ovde će se nalaziti poruke -->
+        </ul>
+      </section>
+     <div class="forme">
+      <form id="formColor">
+        <input
+          type="color"
+          placeholder="Update username"
+          id="inputUsername"
+          value="#FFFFFF"
+        />
+        <input
+          type="submit"
+          value="Update color"
+          id="btnUpdateColor"
+          class="btn"
+        />
+      </form>
+      <!-- Forma za unos poruke -->
+
+      
+        <form id="formMessage">
+          <textarea id="inputMessage" placeholder="Your message..."></textarea>
+          <input type="submit" value="Send" id="btnSend" class="btn" />
+        </form>
+
+        <!-- Forma za promenu korisničkog imena -->
+
+        <form id="formUsername">
+          <input type="text" placeholder="Update username" id="inputUsername" />
+          <input type="submit" value="Update" id="btnUpdate" class="btn" />
+        </form>
+        </div>
+      </div>
+      <div id="poruka" class="poruka"><p>Novo korisnicko ime:</p></div>
+    </div>
+
+    <!-- povezivanje na Firebase -->
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-firestore.js"></script>
+    <script>
+      const firebaseConfig = {
+        apiKey: "AIzaSyDQIN9LYMx0yVV1efVvQt-55MapXrLoo88",
+        authDomain: "itb-js-pvp56gh.firebaseapp.com",
+        projectId: "itb-js-pvp56gh",
+        storageBucket: "itb-js-pvp56gh.appspot.com",
+        messagingSenderId: "4222105703",
+        appId: "1:4222105703:web:4eb7112a58877d0cb07cc2",
+        measurementId: "G-0CHPJE4HQS",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      let db = firebase.firestore();
+      db.collection("chats").get();
+    </script>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,230 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  /* text-align: center; */
+  color: blueviolet;
+}
+
+.container {
+  text-align: center;
+  max-width: 70vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.btn {
+  min-width: 24%;
+  height: 40px;
+  font-size: 18px;
+  background-color: blueviolet;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+}
+#formMessage,
+#formColor {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#btnSend,
+#btnUpdateColor {
+  margin-left: 5px;
+}
+input,
+#inputMessage {
+  /* width: 100%; */
+  height: 40px;
+  /* margin-bottom: 8px; */
+  font-size: 18px;
+  border-radius: 5px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn:hover {
+  background-color: rebeccapurple;
+  cursor: pointer;
+}
+
+form {
+  margin: 10px;
+}
+
+input:focus {
+  border: 3px purple solid;
+}
+
+input:focus,
+.btn:focus {
+  outline-width: 0;
+}
+.forme {
+  /* display: flex;
+  justify-content: center; */
+  height: 20vh;
+  align-items: center;
+}
+
+.sekcija {
+  height: 55vh;
+  display: flex;
+  margin: 10px 0;
+  border-radius: 10px;
+  overflow: scroll;
+
+  /* justify-content: center; */
+  /* align-items: center; */
+  background-color: rgb(235, 229, 224);
+  max-width: 70vw;
+}
+.lista {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: left;
+  list-style: none;
+  padding-left: 0px;
+}
+
+.levo {
+  border-radius: 15px 15px 0px;
+  align-self: flex-start;
+  text-align: right;
+  padding: 15px;
+  padding-left: 30px;
+  background-color: gray;
+  width: 40%;
+  color: white;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.levo span {
+  display: block;
+  text-align: left;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.desno {
+  border-radius: 15px 15px 15px 0px;
+  align-self: flex-end;
+  text-align: right;
+  padding: 15px;
+  padding-right: 30px;
+  background-color: blueviolet;
+  width: 40%;
+  color: white;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.desno span {
+  display: block;
+  text-align: left;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.poruka {
+  position: absolute;
+  height: 100px;
+  width: 250px;
+  background-color: blueviolet;
+  color: white;
+  text-align: left;
+  padding-left: 10px;
+  display: none;
+  border-radius: 10px;
+}
+.prikaziPoruku {
+  display: block;
+}
+
+/* Za mobilne */
+@media only screen and (max-width: 500px) {
+  nav {
+    flex-direction: column;
+  }
+  .btn {
+    height: 35px;
+    margin-top: 5px;
+    font-size: 15px;
+  }
+  #formMessage,
+  #formColor {
+    display: flex;
+    flex-direction: column;
+  }
+  input,
+  #inputMessage {
+    width: 100%;
+    height: 35px;
+    font-size: 15px;
+    margin: 0;
+  }
+  .sekcija {
+    margin-top: 10px;
+  }
+  h1 {
+    font-size: 25px;
+    margin: 5px;
+  }
+  h2 {
+    margin: 5px;
+    font-size: 18px;
+  }
+}
+
+/* Za tablet uredjaje */
+
+@media only screen and (min-width: 501px) and (max-width: 999px) {
+  nav {
+    flex-direction: row;
+  }
+  nav {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  #formMessage,
+  #formColor {
+    display: flex;
+    flex-direction: column;
+  }
+  .btn {
+    min-width: 49%;
+    margin-top: 3px;
+    height: 40px;
+    font-size: 15px;
+  }
+  input,
+  #inputMessage {
+    height: 40px;
+
+    width: 100%;
+    font-size: 15px;
+    margin: 0;
+  }
+  .sekcija {
+    margin-top: 10px;
+  }
+}
+/* Za desktop racunare */
+@media only screen and (min-width: 1000px) {
+  nav {
+    flex-direction: row;
+    border: 0;
+    border-radius: 5px;
+  }
+
+  input,
+  #inputMessage {
+    width: 40%;
+  }
+}
